@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Economica:400i" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body >
+
+<div class="container">
+	<nav class="navbar navbar-inverse navbar-center navbar-fixed-top">
+		<div class="container-fluid ">
+			<div class="navbar-header text">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+				<p class="navbar-brand">Techno News</p>
+			</div>
+    <!--nav bar menu items-->
+    		<div class="collapse navbar-collapse" id="navbar-collapse">
+			<ul class="nav navbar-center navbar-nav ">
+				<li><a href="#">Home</a></li>
+
+				<li><a href="#">Contact us</a></li>
+				<li><a href="#">News</a></li>
+				<li><a href="gadgets.html">Gadgets</a></li>
+				<li><a href="#">Videos</a></li>
+				<li><a href="#">Reviews</a></li>
+				<li><a href="#">Magazine</a></li>
+				<li class="dropdown"></li>
+			</ul>
+
+	<!--login icon -->		
+	     <form class="navbar-form navbar-right" role="search">
+    		<div class="form-group">
+        		<input type="text" class="form-control" placeholder="Search this site">
+   			</div>
+    		<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+		 </form>
+    <!--social MEdia icons-->
+			<ul class="nav navbar-nav navbar-right social"> 
+			    <li><a href="#mymodal"  data-toggle="modal"><span class="fa fa-lg fa-user" ></span></a></li>
+				<li><a href="https://www.facebook.com"><span class="fa fa-lg fa-facebook"></span></a></li>
+				<li><a href="https://www.twitter.com"><span class="fa fa-lg fa-twitter"></span></a></li>
+				<li><a href="https://www.googleplus.com"><span class="fa fa-lg fa-google-plus"></span></a></li>
+				<li><a href="https://www.linkedin.com"><span class="fa fa-lg fa-linkedin"></span></a></li>
+			</ul>
+			</div>
+		</div>
+	</nav>
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+		<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol>
+  <!-- Wrapper for slides -->
+		<div class="carousel-inner">
+			<div class="item active">
+				<a href="http://economictimes.indiatimes.com/magazines/panache/amazons-voice-assistant-alexa-can-now-whisper-bleep-and-even-change-pitch/articleshow/58455607.cms">
+					<img src="images/alexa.jpg"  alt="alexa">
+				</a>	
+					<div class="carousel-caption ">
+					<h3>Amazon Alexa</h3>
+					<p>Amazon's voice assistant Alexa can now whisper,bleep and even change pitch </p>
+					</div>
+			</div>
+
+			<div class="item">
+				<img src="images/fitbit.jpg"  alt="fitbit">
+				<div class="carousel-caption ">
+					<h3>Alta HR WristBand</h3>
+					<p>The Alta HR has a 1.4-inch OLED tap display with a metal chamfered body and interchangeable straps. </p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="images/samsung-galaxy.jpg"   alt="New York">
+				<div class="carousel-caption ">
+					<h3>Samsung-Galaxy S8 plus Review</h3>
+					<p>Samsung has put two great cameras in the S8 Plus built with dual pixel technology.</p>
+				</div>
+			</div>
+
+   
+  <!-- Left and right controls -->
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right"></span>
+    			<span class="sr-only">Next</span>
+    		</a>
+    	</div>
+	</div>
+</div>
+
+<!-- Modal Section -->
+<div class="modal fade" id="mymodal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button class="close" data-dismiss="modal"> &times;</button>
+				<h4 class="modal-title">Login to your Account</h4>
+			</div><!--end of modal header-->
+			<div class="modal-body">
+				<form class="login-form">
+					<p>Username  <input type="email" name="email" placeholder="Username" /></p>
+					Password  <input type="password" name="password" placeholder="password"/>
+				</form>
+				 <label>
+				     <input type="checkbox"> Remember me
+                 </label>
+			<div class="modal-footer">
+				<button class="btn btn-default btn-lg btn-block" data-dismiss="modal" type="button">Login</button>
+				<button id="login_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                                <button id="login_register_btn" type="button" class="btn btn-link">Register</button>
+			</div><!--end of modal footer -->	
+			</div><!--end of modal body-->
+		</div><!--end of modal content-->
+	</div>
+</div>
+<!--End of Modal Section -->
+
+
+
+<!--Article Section-->
+<div class="container">
+	<div class="row art-section">
+	      <div class="col-sm-4">
+		      <article>
+		      	<a href=""><h4>How to evolve your infrastructure to hybrid IT</h4></a>
+			    <figure>
+			    	<img src="images/hybrid.jpg"  alt="hybrid" class="rounded">
+					<figcaption> </figcaption>
+			    </figure>
+		      </article>
+	      </div>
+
+	      <div class="col-sm-4">
+	        <article>
+	      		<a href=""><h4>Tencent steps up AI push with research lab</h4></a>
+	    		<figure>
+	     			<img src="images/tencent.jpg"  alt="hybrid">
+	    			<figcaption></figcaption>
+	    		</figure>
+	    	</article>
+	      </div>
+
+	      <div class="col-sm-4">  
+			<article>
+	 			<a href=""><h4>Twitter partners with Bloomberg</h4></a>
+	 			<figure>
+	 				<img src="images/twitter.jpg"  alt="hybrid">
+	 				<figcaption></figcaption>
+	 			</figure>
+	 		</article>
+	 	</div>
+	 </div>
+
+
+   <!--jumbotron -->
+
+	<div class="jumbotron jumbotron-fluid jumbo">
+   		<p class="lead">Technology is just a tool. In terms of getting the kids working together and motivating them, the teacher is the most important.  - Bill Gates
+    	</p>
+	</div>
+ </div>
+  <!--End of jumbotron -->
+<!--Second Articles -->
+<div class="container" id="con-gif">
+	<div class="row gif-section">
+	      <div class="col-sm-4">
+		      <article>
+		      	<a href=""><h4> Smart light bulbs</h4></a>
+			    <figure>
+			    	<img src="images/lightbulb.gif"  alt="light-bulb">
+					<figcaption>These amazing bulbs have been appearing in the market recently and they will revolutionize the industry!</figcaption>
+			    </figure>
+		      </article>
+	      </div>
+
+	      <div class="col-sm-4">
+	        <article>
+	      		<a href=""><h4>The invisible bicycle helmet</h4></a>
+	    		<figure>
+	     			<img src="images/bicycle.gif"  alt="helmet">
+	    			<figcaption >Created by a pair of Swedish design students, the invisible helmet is actually a wearable airbag that inflates to cover your head and prevent head-trauma....
+	    			</figcaption>
+	    		</figure>
+	    	</article>
+	      </div>
+
+	      <div class="col-sm-4">  
+			<article>
+	 			<a href=""><h4>The power socket nightlight</h4></a>
+	 			<figure>
+	 				<img src="images/socket-light.gif"  alt="socket-light">
+	 				<figcaption>SnapPower is a new take on the traditional night light. It's a socket cover, built to replace your ordinary covers at home....</figcaption>
+	 			</figure>
+	 		</article>
+	 	</div>
+	 </div>
+</div>
+<!--End of Second articles -->
+
+
+
+<!--Footer Section-->
+	<footer>
+		<div class="container foot-sec">
+			<div class="row ">
+	      		<div class="col-sm-4">
+	      		<h4>Copyright 2017 All Rights Reserved</h4>
+	      		</div>
+
+	      		<div class="col-sm-4 get-connect">
+	      			<h4>Get Connected</h4>
+	      			<ul>
+	      				<li><a href="#">News Room</a></li>
+	      				<li><a href="#">Home</a></li>
+	      				<li><a href="#">Social Media</a></li>
+	      				<li><a href="#">Press Release</a></li>
+	      				<li><a href="#">Contact Us</a></li>
+	      			</ul>
+	      		</div>
+
+	      		<div class="col-sm-4 get-connect">
+	      			<h4>Legal</h4>
+	      			<ul>
+	      				<li><a href="#">Terms of Use</a></li>
+	      				<li><a href="#">Cookies</a></li>
+	      				<li><a href="#">Privacy</a></li>
+	      				<li><a href="#">Privacy Shield</a></li>
+	      				<li><a href="#">Accessibility statement</a></li>
+	      			</ul>
+	      		</div>
+	      	</div>
+	    </div>
+
+	</footer>
+	<!--End of Footer Section-->
+
+</body>
+</html>
